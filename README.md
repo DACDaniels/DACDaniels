@@ -1,209 +1,195 @@
-<h1 align="center">Hi, I'm Daniel 👋</h1>
+<h1 align="center">Hi, I'm Daniel <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Waving%20Hand.png" alt="" width="32" height="32" /></h1>
 
 <p align="center">
-  <a href="https://github.com/DACDaniels">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=00E5C0&center=true&vCenter=true&width=620&lines=Software+Engineer+%C2%B7+Harare%2C+Zimbabwe;Computer+Vision+%C2%B7+Edge+AI+%C2%B7+Full-Stack;I+ship+real+systems+that+solve+real+problems." alt="Typing SVG" />
-  </a>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=00E5C0&center=true&vCenter=true&width=620&lines=Software+Engineer+%C2%B7+Harare%2C+Zimbabwe;Computer+Vision+%C2%B7+Edge+AI+%C2%B7+Full-Stack;Precision+aquaculture+tech+at+FishTech" alt="Software Engineer · Computer Vision · Edge AI" />
 </p>
 
 <p align="center">
-  <a href="mailto:chadambukadaniel@gmail.com"><img src="https://img.shields.io/badge/Email-chadambukadaniel%40gmail.com-00E5C0?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  <a href="https://www.linkedin.com/in/daniel-chadambuka-792b74277"><img src="https://img.shields.io/badge/LinkedIn-Daniel%20Chadambuka-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="https://fishtech.co.zw"><img src="https://img.shields.io/badge/Portfolio-Live-111111?style=for-the-badge&logo=vercel&logoColor=00E5C0" /></a>
-  <img src="https://img.shields.io/badge/Open%20to-Work-00E5C0?style=for-the-badge&logo=githubsponsors&logoColor=white" />
+  <a href="mailto:chadambukadaniel@gmail.com"><img src="https://img.shields.io/badge/Email-chadambukadaniel%40gmail.com-00E5C0?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://www.linkedin.com/in/daniel-chadambuka-792b74277"><img src="https://img.shields.io/badge/LinkedIn-Daniel%20Chadambuka-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://dev.danielchadambuka.com"><img src="https://img.shields.io/badge/Portfolio-dev.danielchadambuka.com-111111?style=for-the-badge&logo=vercel&logoColor=00E5C0" alt="Portfolio" /></a>
+  <a href="https://fishtech.co.zw"><img src="https://img.shields.io/badge/FishTech-Company%20site-0E7490?style=for-the-badge" alt="FishTech · Company site" /></a>
+  <a href="https://dev.danielchadambuka.com/#contact"><img src="https://img.shields.io/badge/Open%20to-Work-00E5C0?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="Open to work" /></a>
 </p>
 
 ---
 
-### 👨🏽‍💻 About me
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People/Technologist.png" alt="" width="25" height="25" /> About me
 
-I'm a final-year **BSc Computer Science** student at the **National University of Science and Technology (NUST), Zimbabwe**, and the founder of **FishTech Consultancy**. I build production software end-to-end — from computer vision pipelines running on $35 hardware to payment-integrated web platforms used by real customers.
+I'm a **BSc Computer Science graduate, NUST (2026)**, based in Harare, and the founder of **FishTech Consultancy**. I build software end to end: computer vision that runs offline on a Raspberry Pi at the side of a fish pond, the embedded control for a solar-powered feeder, and web platforms with online payments for local businesses.
 
-My work sits at the intersection of **software engineering, computer vision, and the realities of the African market** — low bandwidth, low budgets, high stakes. I don't build demos. I build things people pay for and use.
+Most of my work is shaped by local conditions: patchy connectivity, tight budgets, and users who need the thing to keep working when the internet doesn't.
 
 ```ts
 const daniel = {
   role: "Software Engineer",
   location: "Harare, Zimbabwe 🇿🇼",
-  education: "BSc Computer Science · NUST (Final Year, 2026)",
+  education: "BSc Computer Science graduate, NUST (2026)",
   founder: "FishTech Consultancy",
   building: [
-    "computer vision biomass estimation on Raspberry Pi",
-    "production web platforms with real payment integrations",
-    "edge AI systems for African aquaculture",
-    "Custom websites and software solutions",
+    "Iris: overhead-camera fish biomass and feeding recommendations",
+    "FishTech Feeder: solar-powered automatic feeder on an ESP32",
+    "web platforms with online payments",
   ],
-  philosophy: (problem) => problem.solve("from first principles"),
 };
 ```
 
 ---
 
-### 🚀 What I'm building right now
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Tropical%20Fish.png" alt="" width="25" height="25" /> Featured projects
 
-- 🐟 **FishTech Smart Feed Management System** — YOLOv8 fish detection + biomass estimation pipeline targeting Raspberry Pi deployment for small-scale aquaculture farmers.
-- 🍽️ **SteadyHands Catering Platform** — live e-commerce platform with Paynow payment integration, currently serving BATA Club.
-- 🌊 **FishTech Consultancy Web Platform** — lead-generation site converting visitors into farm-build inquiries via WhatsApp funnel.
-- 🎨 **Personal portfolio v2** — a Next.js 15 + Tailwind v4 site engineered for Awwwards-level polish.
+#### Iris: FishTech Precision Feeding System
+> An overhead camera reads fish length from above the pond. The system converts that to per-fish weight and whole-pond biomass, then produces a feed recommendation adjusted for fish size, water temperature, time of day and the response to the last feeding. It is built to run at the pondside on a Raspberry Pi with no internet.
 
----
+- **Backend:** Python 3.11, FastAPI on uvicorn (migrated from Flask), SQLite in WAL mode. 210 backend tests (pytest).
+- **Vision today:** YOLOv8 detector trained locally with Ultralytics on a self-collected demo-tank dataset; a read-only evaluation harness measures detection and count against labelled frames.
+- **Vision next:** YOLO11-Pose with six keypoints per fish for length, ChArUco + ultrasonic calibration with Snell refraction correction, and ByteTrack tracking.
+- **Hardware:** Raspberry Pi 5 with the Hailo-8L AI HAT+ as the target edge platform (AI HAT+ not yet procured); mast, boom and enclosure parts modelled as parametric CAD.
+- **Dashboard:** React 19 + Vite + TanStack Router.
+- **Status:** running on a demo tank, not yet piloted on a farm. Biomass accuracy is not yet validated; that waits on measured fresh-fish ground truth.
 
-### 🧰 Tech Stack
+`Python` · `FastAPI` · `Ultralytics YOLO` · `PyTorch` · `OpenCV` · `SQLite` · `React` · `Raspberry Pi`
 
-**Languages**
+<sub>Private repository · demo on request</sub>
 
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
+#### FishTech Feeder
+> A welded mild-steel, solar-powered automatic fish feeder in two sizes, F10 and F25 (10 kg and 25 kg hoppers). It meters each dose by counting auger revolutions and broadcasts it over the water with a spinning disc. It works out the daily ration from fish size and water temperature, caps it to what the pond can carry, and runs standalone with no internet. It can also take a grams-per-feed instruction from Iris over Wi-Fi.
 
-**Frontend**
+- **Electronics:** ESP32-WROOM-32 with a DS3231 real-time clock, hand-built IRF3205 MOSFET driver board, hall-sensor revolution counting on the hardware pulse counter, 20 W solar panel and 12 V battery.
+- **Firmware:** Arduino under PlatformIO; bench bring-up sketch written, product firmware next.
+- **Design:** parametric build123d model whose `verify.py` passes 450 geometry checks.
+- **Status:** the two gating tests (dose and throw) have not been run yet; not yet piloted.
 
-![Next.js](https://img.shields.io/badge/Next.js%2015-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind%20v4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-![Framer Motion](https://img.shields.io/badge/Framer%20Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+`ESP32` · `C++ / Arduino` · `PlatformIO` · `build123d` · `Python`
 
-**Backend**
+<sub>Private repository · demo on request</sub>
 
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
-![REST APIs](https://img.shields.io/badge/REST%20APIs-25A162?style=for-the-badge&logo=fastapi&logoColor=white)
-
-**AI / Computer Vision**
-
-![YOLOv8](https://img.shields.io/badge/YOLOv8-00FFFF?style=for-the-badge&logo=yolo&logoColor=black)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![Roboflow](https://img.shields.io/badge/Roboflow-6706CE?style=for-the-badge&logo=roboflow&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-
-**Databases**
-
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-
-**Hardware / Edge**
-
-![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![IoT](https://img.shields.io/badge/IoT-008272?style=for-the-badge&logo=internetcomputer&logoColor=white)
-
-**DevOps & Tooling**
-
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
-
-**Integrations**
-
-![Paynow](https://img.shields.io/badge/Paynow%20Gateway-1E88E5?style=for-the-badge&logoColor=white)
-![WhatsApp Business](https://img.shields.io/badge/WhatsApp%20Business-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)
+**Where it started:** [Smart-Fish-Feeding-System](https://github.com/DACDaniels/Smart-Fish-Feeding-System), my first computer-vision fish feeding prototype.
 
 ---
 
-### 🏆 Featured Projects
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Laptop.png" alt="" width="25" height="25" /> Other projects
 
-#### 🐟 [FishTech Smart Feed Management System](https://github.com/DACDaniels/fishtech-smart-feed-ai-system)
-> Computer-vision-based fish biomass estimation and feeding decision-support system for small-scale aquaculture farmers in Zimbabwe.
+#### [SteadyHands Catering Platform](https://github.com/DACDaniels/steadyhands-platform) · [steadyhandscatering.com](https://steadyhandscatering.com)
+> Live site for SteadyHands @ Bata Club: menu, online ordering and catering enquiries.
 
-- Trained a custom **YOLOv8** detection model on a self-collected pond dataset (turbidity, reflections, motion blur — real conditions).
-- Implemented camera calibration to convert pixel measurements into real-world fish length.
-- Applied the biological length–weight relationship `W = aL^b` for biomass estimation.
-- Aggregated biomass into feeding recommendations using aquaculture feeding guidelines.
-- Validated against manually weighed fish; reports detection precision, recall, and mAP.
-- Designed for **Raspberry Pi** edge deployment — offline-capable, low-cost (~$35 hardware).
-- **Status:** advanced prototype · final-year research project (submitted Nov 2025).
+- Online payments through the Paynow SDK.
+- Built and deployed end to end.
 
-`Python` · `YOLOv8` · `OpenCV` · `Roboflow` · `Flask` · `Raspberry Pi`
+`Next.js` · `TypeScript` · `Prisma` · `Paynow`
 
----
+#### [FishTech Consultancy website](https://github.com/DACDaniels/fishtech-consultancy) · [fishtech.co.zw](https://fishtech.co.zw)
+> Company site for fish pond construction services in Zimbabwe, kept light for slow mobile connections, with enquiries routed to WhatsApp.
 
-#### 🍽️ [SteadyHands Catering Platform](https://github.com/DACDaniels/steadyhands-platform) — [steadyhandscatering.com](https://steadyhandscatering.com)
-> Production e-commerce platform for BATA Club. Browse menu, place orders, pay online.
+`React` · `TypeScript` · `Vite` · `Framer Motion`
 
-- **Live revenue-generating site** with real customers placing real orders.
-- Integrated **Paynow** payment gateway — Ecocash, OneMoney, Visa, Mastercard.
-- Server-side rendering for SEO + fast first paint on slow connections.
-- Direct WhatsApp funnel for custom catering inquiries.
-- Independently architected, built, and deployed end-to-end.
+#### [Portfolio](https://github.com/DACDaniels/daniel-portfolio) · [dev.danielchadambuka.com](https://dev.danielchadambuka.com)
+> My personal site, with a custom design system and scroll-driven motion.
 
-`Next.js` · `TypeScript` · `Node.js` · `Paynow API` · `Vercel`
+`Next.js` · `TypeScript` · `Tailwind CSS v4` · `Motion`
 
 ---
 
-#### 🌊 [FishTech Consultancy](https://github.com/DACDaniels/fishtech-consultancy) — [fishtech.co.zw](https://fishtech.co.zw)
-> Multi-page aquaculture consultancy platform — pond construction, HDPE liner installs, fingerling supply.
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" alt="" width="25" height="25" /> Ventures
 
-- Built from scratch (no template) and **optimized for low-bandwidth Zimbabwean networks**.
-- Lightweight asset pipeline via Vite for fast builds and minimal payload.
-- Conversion-focused architecture funneling visitors into WhatsApp inquiries.
-- Mobile-first responsive design.
-
-`React` · `TypeScript` · `Vite` · `Framer Motion` · `Vercel`
+- 🐟 **FishTech Consultancy**: Founder & CEO
+- 🎟️ **Ticket Kulture Zimbabwe (Pvt) Ltd**: Director
 
 ---
 
-#### 🎨 [Personal Portfolio v2](https://github.com/DACDaniels/daniel-portfolio)
-> Awwwards-targeted developer portfolio. Designed pixel-by-pixel, not generated.
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Spiral%20Calendar.png" alt="" width="25" height="25" /> Milestones
 
-- Custom design system — no default Tailwind palette, no template aesthetic.
-- Magnetic buttons, animated dot grid, custom cursor, scroll-driven reveals.
-- Automated screenshot-and-iterate workflow for design QA.
-- Mobile-first, performance-optimized, accessibility-aware.
-
-`Next.js 15` · `TypeScript` · `Tailwind v4` · `Framer Motion` · `Aceternity UI`
+- 📍 **2026**: Presidential Innovation Awards (participant)
+- 📍 **Aug 2026**: Zimbabwe Agricultural Show, Harare (exhibited the FishTech Feeder)
+- 📍 Zimbabwe Digital Economy Conference, Bulawayo (participant)
 
 ---
 
-### 💼 Experience
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Briefcase.png" alt="" width="25" height="25" /> Experience
 
-- **Founder & Lead Engineer** — FishTech Consultancy *(2024 — Present)*
-  Building software and aquaculture infrastructure for Zimbabwean farmers.
-- **Industrial Attachment** — ZIMDEF *(May 2024 — Jun 2025)*
-  Enterprise IT environment — SAP, Data Centre, ManageEngine, Microsoft 365, networking, support systems.
-- **Freelance Software Engineer** *(2024 — Present)*
-  Delivering production web platforms with real payment integrations to local clients.
-
----
-
-### 🎯 What I'm currently learning
-
-- **Rust** — for high-performance video processing on resource-constrained edge devices.
-- **Production-grade systems architecture** — concurrency, streaming, observability.
-- **Computer vision optimization** — moving past Python bottlenecks for real-time inference.
+- **Founder & CEO**, FishTech Consultancy *(2024 – present)*
+  Aquaculture services for Zimbabwean farmers, and the engineering behind Iris and the FishTech Feeder.
+- **Industrial Attachment**, ZIMDEF *(May 2024 – Jun 2025)*
+  Enterprise IT environment: SAP, data centre, ManageEngine, Microsoft 365, networking and support systems.
+- **Freelance Software Engineer** *(2024 – present)*
+  Web platforms with online payment integrations for local clients.
 
 ---
 
-### 📊 GitHub Stats
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Hammer%20and%20Wrench.png" alt="" width="25" height="25" /> What I'm working on now
+
+- **Keypoint-based fish measurement:** moving Iris from bounding boxes to YOLO11-Pose six-keypoint length measurement.
+- **On-device inference:** the Raspberry Pi 5 + Hailo-8L deployment path for Iris (ONNX to HEF compilation).
+- **Biomass validation:** measuring fresh fish to turn the pipeline's biomass output into a validated accuracy figure.
+- **Feeder firmware:** ESP32 firmware for counted-revolution metering and the feeding schedule.
+
+---
+
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Toolbox.png" alt="" width="25" height="25" /> Tech stack
+
+<p>
+  <img src="https://skillicons.dev/icons?i=python,fastapi,pytorch,opencv,ts,react,nextjs,tailwind,vite,sqlite,prisma,raspberrypi,arduino,linux,git&perline=15" alt="Python, FastAPI, PyTorch, OpenCV, TypeScript, React, Next.js, Tailwind, Vite, SQLite, Prisma, Raspberry Pi, Arduino, Linux, Git" />
+</p>
+
+<details>
+<summary><b>Full list</b></summary>
+
+<br />
+
+| Area | Tools |
+|---|---|
+| **Languages** | Python, TypeScript, JavaScript, C++ (Arduino), SQL, Bash |
+| **Backend** | FastAPI, uvicorn, Flask, Node.js, Express, REST APIs, Pydantic |
+| **Frontend** | Next.js, React, Tailwind CSS v4, Vite, TanStack Router / Query, Framer Motion |
+| **AI / computer vision** | Ultralytics YOLO, PyTorch, OpenCV, Roboflow, NumPy, TensorFlow |
+| **Databases** | SQLite, PostgreSQL, Prisma, MongoDB, MySQL |
+| **Edge / embedded** | Raspberry Pi 5, ESP32, PlatformIO, Linux |
+| **Hardware design** | build123d, CadQuery |
+| **Testing** | pytest |
+| **DevOps & tooling** | Git, GitHub, GitHub Actions, Vercel, Docker, Postman, VS Code |
+| **Integrations** | Paynow, WhatsApp Business |
+
+</details>
+
+---
+
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Bar%20Chart.png" alt="" width="25" height="25" /> GitHub activity
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=DACDaniels&show_icons=true&theme=tokyonight&hide_border=true&bg_color=080808&title_color=00E5C0&icon_color=00E5C0&text_color=ffffff" alt="Daniel's GitHub stats" height="180" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DACDaniels&layout=compact&theme=tokyonight&hide_border=true&bg_color=080808&title_color=00E5C0&text_color=ffffff" alt="Top languages" height="180" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="profile/stats-dark.svg" />
+    <img src="profile/stats-light.svg" alt="GitHub stats" height="165" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="profile/top-langs-dark.svg" />
+    <img src="profile/top-langs-light.svg" alt="Top languages" height="165" />
+  </picture>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=DACDaniels&theme=tokyonight&hide_border=true&background=080808&stroke=00E5C0&ring=00E5C0&fire=00E5C0&currStreakLabel=00E5C0" alt="GitHub streak" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="profile/streak-dark.svg" />
+    <img src="profile/streak-light.svg" alt="Contribution streak" height="165" />
+  </picture>
 </p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="profile/snake-dark.svg" />
+    <img src="profile/snake-light.svg" alt="Contribution graph drawn as a snake" />
+  </picture>
+</p>
+
+<p align="center"><sub>Generated daily by GitHub Actions in this repository. Counts public activity only.</sub></p>
 
 ---
 
-### 🤝 Let's build something
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Handshake.png" alt="" width="25" height="25" /> Let's work together
 
-I'm available for:
+I'm open to:
 
-- 💼 **Full-time roles** — software engineering, full-stack, computer vision, edge AI (remote-first or Zimbabwe-based)
-- 🛠️ **Freelance / contract work** — production web platforms, payment integrations, custom systems
-- 🧪 **Research collaborations** — applied computer vision, edge AI, agritech
+- 💼 **Full-time roles:** software engineering, full-stack, computer vision, edge AI (remote-first or Zimbabwe-based)
+- 🛠️ **Freelance / contract work:** web platforms, payment integrations, custom systems
+- 🧪 **Research collaborations:** applied computer vision, edge AI, agritech
 
-📫 **Reach me:** [chadambukadaniel@gmail.com](mailto:chadambukadaniel@gmail.com) · [LinkedIn](https://www.linkedin.com/in/daniel-chadambuka-792b74277) · 📱 +263 780 802 880
-
-<p align="center"><i>Building from Harare. Shipping to the world.</i></p>
+📫 [chadambukadaniel@gmail.com](mailto:chadambukadaniel@gmail.com) · [LinkedIn](https://www.linkedin.com/in/daniel-chadambuka-792b74277) · [dev.danielchadambuka.com](https://dev.danielchadambuka.com/#contact)

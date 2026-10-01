@@ -1,0 +1,82 @@
+name: Profile stats
+
+# Regenerates the stats, top-languages and streak cards (dark + light) and commits
+# them to the branch it ran on. Uses only the built-in GITHUB_TOKEN, so the cards
+# count public activity; private repositories are not included.
+on:
+  schedule:
+    - cron: "17 2 * * *" # daily, 02:17 UTC
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/stats.yml"
+      - ".github/scripts/streak.mjs"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-images-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Stats card (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_border=true&theme=github_dark&title_color=00e5c0&icon_color=00e5c0
+          path: profile/stats-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Stats card (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_border=true&theme=default&title_color=0e7c6b&icon_color=0e7c6b
+          path: profile/stats-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Top languages (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&hide_border=true&theme=github_dark&title_color=00e5c0
+          path: profile/top-langs-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Top languages (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&hide_border=true&theme=default&title_color=0e7c6b
+          path: profile/top-langs-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Streak card (dark + light)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: ${{ github.repository_owner }}
+        run: node .github/scripts/streak.mjs profile
+
+      - name: Commit cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/stats-*.svg profile/top-langs-*.svg profile/streak-*.svg
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: update profile stats cards"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
