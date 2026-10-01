@@ -16,7 +16,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: profile-images-${{ github.ref }}
+  group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
